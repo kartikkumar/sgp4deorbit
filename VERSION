@@ -1,0 +1,5 @@
+// This file exists for CMake to be able to find the requested version of the modified SGP4 
+// library by Daniel R Warner (http://www.danrw.com/public/sgp4/). The modified library can be
+// found on Github (https://github.com/deorbit/sgp4.git).
+#define SGP4DANRW_VERSION_MAJOR 1
+#define SGP4DANRW_VERSION_MINOR 1
