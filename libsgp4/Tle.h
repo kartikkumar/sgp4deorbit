@@ -92,6 +92,41 @@ public:
     }
 
     /**
+     * Update mean elements.
+     * @param[in] newInclination Inclination [deg]
+     * @param[in] newRightAscendingNode Right ascension of the ascending node [deg]
+     * @param[in] newEccentricity Eccentricity [-]
+     * @param[in] newArgumentPerigee Argument of perigee [deg]
+     * @param[in] newMeanAnomaly Mean anomaly [deg]
+     * @param[in] newMeanMotion Mean motion [revolutions/day]
+     */
+    void updateMeanElements( const double newInclination,
+                             const double newRightAscendingNode,
+                             const double newEccentricity,
+                             const double newArgumentPerigee,
+                             const double newMeanAnomaly,
+                             const double newMeanMotion )
+    {
+        // Update mean elements stored internally.
+        inclination_ = newInclination;
+        right_ascending_node_ = newRightAscendingNode;
+        eccentricity_ = newEccentricity;
+        argument_perigee_ = newArgumentPerigee;
+        mean_anomaly_ = newMeanAnomaly;
+        mean_motion_ = newMeanMotion;
+    }
+
+    /**
+     * Update epoch.
+     * @param[in] newEpoch Epoch [DateTime object]
+     */
+    void updateEpoch( const DateTime newEpoch )
+    {
+        // Update epoch stored internally.
+        epoch_ = newEpoch;
+    }
+
+    /**
      * Get the satellite name
      * @returns the satellite name
      */
