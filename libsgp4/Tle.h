@@ -60,6 +60,31 @@ public:
     }
 
     /**
+     * Default constructor.
+     * @details Initialise an empty TLE object.
+     */
+    Tle( )
+    {
+        name_ = "Empty";
+        line_one_ = "Empty";
+        line_two_ = "Empty";
+
+        norad_number_ = 0;
+        int_designator_ = "EMPTY";
+        epoch_ = DateTime( );
+        mean_motion_dt2_ = 0.0;
+        mean_motion_ddt6_ = 0.0;
+        bstar_ = 0.0;
+        inclination_ = 0.0;
+        right_ascending_node_ = 0.0;
+        eccentricity_ = 0.0;
+        argument_perigee_ = 0.0;
+        mean_anomaly_ = 0.0;
+        mean_motion_ = 0.0;
+        orbit_number_ = 0;
+    }    
+
+    /**
      * Copy constructor
      * @param[in] tle Tle object to copy from
      */
