@@ -18,6 +18,8 @@
 #ifndef TLE_H_
 #define TLE_H_
 
+#include <limits>
+ 
 #include "Util.h"
 #include "DateTime.h"
 #include "TleException.h"
@@ -80,7 +82,7 @@ public:
         eccentricity_ = 0.0;
         argument_perigee_ = 0.0;
         mean_anomaly_ = 0.0;
-        mean_motion_ = 0.0;
+        mean_motion_ = std::numeric_limits< double >::min( );
         orbit_number_ = 0;
     }    
 
