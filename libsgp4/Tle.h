@@ -67,12 +67,12 @@ public:
      */
     Tle( )
     {
-        name_ = "Empty";
-        line_one_ = "Empty";
-        line_two_ = "Empty";
+        name_ = "";
+        line_one_ = "";
+        line_two_ = "";
 
         norad_number_ = 0;
-        int_designator_ = "EMPTY";
+        int_designator_ = "00000AAA";
         epoch_ = DateTime( );
         mean_motion_dt2_ = 0.0;
         mean_motion_ddt6_ = 0.0;
