@@ -16,3 +16,5 @@ autom4te.cache
 *.sublime-workspace
 npp.tle
 iss.tle
+build
+docs
